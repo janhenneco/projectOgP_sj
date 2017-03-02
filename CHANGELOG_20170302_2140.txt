@@ -1,0 +1,36 @@
+CHANGELOG 02/03/2017:
+
+Velocity:
+-> Changed isValidVelocity() to instance method canHaveAsVelocity() 
+
+-> Set variable speedLimit to default value 300000 (however this will 
+	change in future versions when ships can have diffent speed limits, 
+	therefore instance method setSpeedLimit() is already implemented in this version).
+
+-> Changed 	public boolean canHaveAsVelocity() {
+			return (this.getSpeed() <= 300000);
+	to:
+		public boolean canHaveAsVelocity() {
+			return (this.getSpeed() <= speedLimit);
+	
+	for the sake of adaptebility (see previous log entry).
+
+-> Minor changes to method headers.
+
+-> Put		@invar The speed of a ship can never be higher than c = 300 000 km/s.
+  			| canHaveAsVelocity(getVelocity())
+	
+	as class invariant for the class Velocity.
+	? Should it be removed as class invariant for the class Ship?
+
+Position:
+-> Changed isValidPosition() to instance method canHaveAsPosition(). 
+
+-> Class Position, line 34: double cannot be compared to null => RETHINK THIS METHOD'S
+	IMPLEMENTATION.
+
+-> Made class IllegalTimeException in package src/asteroids.exceptions => tried to extend
+	to ModelException => FAILED, no idea how to do this. 
+
+
+NOTE: Assertions should be enabled when implementing nominal methods.
