@@ -1,0 +1,15 @@
+TODO:
+
+SHIP
+Header + classheader Ship
+Ship.move header afwerken
+ModelExceptions veranderen in gewone exceptions
+Fout met excepetions oplossen
+
+POSITION
+Header + classheader
+
+VELOCITY
+Header + classheader
+docu getMaxSpeed
+
