@@ -4,45 +4,66 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
+      <x>460</x>
       <y>530</y>
-      <w>100</w>
-      <h>50</h>
+      <w>160</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>Ship
--</panel_attributes>
+-
+thruster
+isThrusterActivated
+thrustOn
+thrustOff
+getMass
+isThrusterActive
+isThusterInactive
+getAcceleration
+getBullets
+getNbBullets
+loadBullet
+loadBulletS
+removeBullet
+fireBullet</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>410</y>
-      <w>100</w>
-      <h>60</h>
+      <x>190</x>
+      <y>220</y>
+      <w>200</w>
+      <h>340</h>
     </coordinates>
     <panel_attributes>World
 -
 x
-y</panel_attributes>
+y
+-
+terminate
+isTerminated
+getSize
+getShips
+getBullets
+addShip
+removeShip
+addBullet
+removeBullet
+
+getTimeNextCollision
+getPositionNextCollision
+
+evolve
+getEntity
+getEntities
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>690</x>
-      <y>230</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Shape</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>960</x>
-      <y>410</y>
+      <x>1090</x>
+      <y>330</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -52,8 +73,8 @@ y</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>960</x>
-      <y>310</y>
+      <x>1090</x>
+      <y>270</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -63,139 +84,119 @@ y</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
+      <x>830</x>
       <y>530</y>
-      <w>100</w>
-      <h>50</h>
+      <w>170</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>Bullet
--</panel_attributes>
+-
+getMass
+getShip
+getSource
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>300</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Circle</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>690</x>
-      <y>380</y>
-      <w>100</w>
-      <h>60</h>
+      <x>620</x>
+      <y>120</y>
+      <w>210</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>Entity
--</panel_attributes>
+-
+terminate
+isTerminated
+getWorld
+getPosition
+getVelocity
+getRadius
+
+getTimeCollisionBoundary
+getPositionCollisionBoundary
+getTimeToCollision
+getPositionColission
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>670</x>
+      <x>610</x>
       <y>520</y>
-      <w>150</w>
+      <w>240</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..1
 m2=0..*
 </panel_attributes>
-    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
-      <y>430</y>
-      <w>120</w>
-      <h>120</h>
+      <x>720</x>
+      <y>360</y>
+      <w>180</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0;100.0;50.0;100.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0;160.0;90.0;160.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>620</x>
-      <y>430</y>
-      <w>130</w>
-      <h>120</h>
+      <x>560</x>
+      <y>360</y>
+      <w>190</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>110.0;10.0;110.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+    <additional_attributes>170.0;10.0;170.0;90.0;10.0;90.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>400</y>
-      <w>170</w>
+      <x>380</x>
+      <y>210</y>
+      <w>260</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=0..*
 </panel_attributes>
-    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>410</y>
-      <w>200</w>
+      <x>820</x>
+      <y>330</y>
+      <w>290</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 
 m2=1
 </panel_attributes>
-    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>310</y>
-      <w>200</w>
-      <h>130</h>
+      <x>820</x>
+      <y>260</y>
+      <w>290</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 
 m2=1
 </panel_attributes>
-    <additional_attributes>10.0;110.0;30.0;110.0;30.0;10.0;180.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>730</x>
-      <y>250</y>
-      <w>30</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>lt=-
-
-m2=1
-</panel_attributes>
-    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>690</x>
-      <y>250</y>
-      <w>30</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
   </element>
 </diagram>
