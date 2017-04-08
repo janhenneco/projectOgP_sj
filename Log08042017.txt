@@ -1,0 +1,4 @@
+Adden en removen van ships vervolledigd, ook in Facade -> rustig overlopen om te zien of er gaten in zitten.
+getShips -> return this.ships i.p.v. return ships
+getBullets -> "
+set methodes -> ook allemaal defensief uitwerken??? 
